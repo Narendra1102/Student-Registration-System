@@ -1,0 +1,158 @@
+*{
+   box-sizing: border-box; 
+   padding:0;
+   margin:0;
+}
+body{
+    background-color: azure;
+}
+h1{
+    text-align: center;
+    background: linear-gradient(135deg,#6aa2ff,rgb(216, 11, 175));
+    padding:25px;
+}
+
+h2{
+    text-align: center;
+
+    margin:25px 0;
+}
+#about{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color:red;
+}
+#register-btn{
+    display: block;
+    padding:10px;
+    width:200px;
+    margin:auto;
+    background-color: rgb(0, 213, 255);
+    cursor: pointer;
+    border:none;
+    border-radius: 8px;
+    
+    
+}
+#register-btn:hover{
+    box-shadow: 2px 2px 2px grey;
+}
+.register-card{
+    border:1px solid black;
+    border-radius: 10px;
+    margin-top:30px;
+    padding:30px;
+    background-color: aquamarine;
+    border:none;
+}
+
+
+
+form h4{
+    margin-bottom:10px;
+}
+form input{
+    width:100%;
+    margin-bottom:30px;
+    border-radius:6px;
+    padding:18px;
+}
+form input:focus{
+    border-color: rgb(0, 213, 255);
+    outline:none;
+}
+
+.container{
+    display:flex;
+    gap:6px;
+    width:90%;
+    margin:auto;
+}
+
+.records{
+    border:1px solid lightyellow;
+    border-radius: 10px;
+    margin-top:30px;
+    padding:30px;
+    background-color: sandybrown;
+    
+}
+table{
+    border-collapse: collapse;
+    width:100%;
+    position:relative;
+}
+th {
+    color:white;
+    background: #007bff;
+    padding:15px 20px;
+    position:sticky;
+    top:0px;
+    z-index: 1;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:15px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:40px;
+}
+
+.action-btn{
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color:white;
+}
+.edit-btn{
+    background: #28a745;
+}
+.delete-btn{
+    background: #dc3545;
+}
+#tableContainer{
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+     margin-top: 30px;
+}
+
+
+
+@media ((min-width:641px) and (max-width:1024px)) {
+    .container{
+        display:block;
+    }
+    table, th, td {
+        font-size: 16px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    
+}
+
+@media(max-width:640px){
+    .container{
+        display:block;
+    }
+    table, th, td {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2{
+        font-size: 18px;
+    }
+
+}
